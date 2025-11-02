@@ -26,18 +26,21 @@
 //Gioco dei dadi
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 
-      const myNumber = Math.floor(Math.random()*6)+1;
-      const pcNumber = Math.floor(Math.random()*6)+1;
+const myNumber = Math.floor(Math.random() * 6) + 1;
+const pcNumber = Math.floor(Math.random() * 6) + 1;
+console.log(myNumber);
+console.log(pcNumber);
+if (myNumber < pcNumber) {
+    console.log("Hai perso");
+} else if (myNumber > pcNumber) {
+    console.log("Hai vinto");
+} else {
+    console.log("Pareggio");
+}
 
-      let win = false
-      if (myNumber<pcNumber) {
-        win = true
-      }
-      console.log(myNumber)
-      console.log(pcNumber)
-      console.log(win)
+
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-//genera un  numero da 1 a 6 per entrambi 
+//genera un  numero da 1 a 6 per entrambi
 //verificare chi ha il punteggio piu alto
 //se il computer ha il punteggio piu alto computer win se io ho il numero piu alto vinco io 
